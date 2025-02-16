@@ -1,0 +1,322 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  
+  /* Hero */
+  .hero-box .box p {
+    width: 500px;
+  }
+  
+  .hero-box .box img {
+    width: 400px;
+    transition: 2s;
+  }
+ .about-box .bos img {
+    width: 400px;
+    transition: 2s;
+  }
+  .hero-box .box:nth-child(1) {
+    --animate-delay: 0.5s;
+  }
+  @media (max-width: 992px) {
+    .hero-box .box p {
+      font-size: 14px;
+      width: 300px;
+    }
+    
+
+    .hero-box .box img {
+      width: 250px;
+    }
+   
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding-top: 50px;
+    }
+  
+    .hero-box {
+      text-align: center;
+    }
+  
+    .hero-box .box p {
+      width: 100%;
+    }
+    
+  }
+  .about-box img {
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  @media (max-width: 475px) {
+    .about-box img {
+      width: 300px;
+    }
+  }
+  .hero-box {
+    width: 100%;
+    max-width: 1300px;
+    margin: 50px auto;
+    background: rgb(137, 165, 139);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    gap: 20px;
+}
+.about-box {
+    width: 100%;
+    max-width: 1300px;
+    margin: 10px auto;
+    background: rgb(137, 165, 139);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    top: auto;
+    
+}
+.hero-box {
+    margin-bottom: 1px; /* Kurangi margin bawah */
+}
+
+.about-box {
+    margin-top: 1px; /* Kurangi margin atas */
+}
+
+.hero-box p {
+  text-align: justify;
+  text-indent: 30px;
+  position: relative;
+  top: -0px;
+ 
+}
+.col p {
+  text-align: justify;
+  text-indent: 30px;
+  position: relative;
+  top: -0px;
+ 
+}
+/* Mengubah warna teks "Wisata Indonesia" di hero section */
+.hero h1 {
+  color: #d6ba4d; /* Warna kuning */
+}
+/* Mengubah warna teks "Tips & Panduan Berwisata ke Indonesia" */
+.tips h1 {
+  color: #d6ba4d; /* Warna kuning */
+}
+
+.hero-box h1 {
+  position: relative;
+  top: -20px;
+   border-bottom: 3px solid #2C2C2C;
+    display: inline-block;
+    padding-bottom: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.about-box h1 {
+  border-bottom: 3px solid #2C2C2C;
+    display: inline-block;
+    padding-bottom: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.about-box img:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+.hero-box img:hover {
+  transform: scale(1.15);
+  transition: 0.3s ease-in-out;
+}
+
+/* Footer */
+.footer {
+  background-color: #198754; /* Warna hijau Bootstrap */
+  padding: 40px 0;
+  color: white;
+}
+
+.footer-box {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.footer a {
+  color: #FFD700; /* Warna emas untuk kesan premium */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #ffffff; /* Efek hover */
+}
+
+.footer .contact-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #FFD700;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  font-size: 14px;
+  opacity: 0.75;
+  padding-top: 10px;
+}
+
+.footer a {
+  color: #FFD700; /* Warna emas untuk kesan premium */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+/* transisi tombol */
+/* Efek hover untuk tombol navbar */
+.navbar-nav .nav-link {
+  position: relative;
+  padding: 8px 16px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Efek perubahan warna saat hover */
+.navbar-nav .nav-link:hover {
+  color: #ffcc00; /* Warna kuning saat hover */
+  transform: scale(1.1); /* Efek zoom */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efek underline animasi */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #ffcc00; /* Warna garis bawah */
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; /* Garis muncul saat hover */
+}
+
+/* Efek transisi tombol navbar saat diklik */
+.navbar-toggler {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler:hover {
+  transform: rotate(90deg); /* Efek rotasi saat hover */
+}
+
+.row-col {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Jarak antar kotak */
+}
+.bg-success {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
+.service p {
+  text-align: justify;
+}
+
+
+
+.contact-form h1{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fff;
+  font-family: 'poppins';
+}
+.contact-form h2{
+  line-height: 40px;
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #69275c;
+  text-align: center;
+}
+.contact-form .main{
+  position: relative;
+  display: flex;
+  margin: 30px 0;
+}
+.content{
+  flex-basis: 50%;
+  padding: 3em 3em;
+  background: #fff;
+  box-shadow: 2px 9px 49px -17px rgba(156, 39, 148, 0.1);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.form-img{
+  flex-basis: 39%;
+  background: #f0f4f8;
+  background-size: cover;
+  padding: 40px;
+  border-top-right-radius: px;
+  border-bottom-right-radius: 8px;
+  align-items: center;
+  display: grid;
+}
+.form-img img{
+  max-width: 100%;
+}
+.btn,
+button,
+input{
+  border-radius: 35px;
+}
+
+
+.contact-form input,
+textarea{
+  outline: none;
+  margin-bottom: 15px;
+  font-stretch: 16px;
+  color: #999;
+  padding: 14px 20px;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  background: #fcfcfc;
+  transition: 0.3s ease;
+}
+.contact-form input:focus{
+  background: transparent;
+  border: 1px solid #69275c;
+}
+.contact-form button{
+  font-size: 18px;
+  color: #fff;
+  width: 100%;
+  background: #69275c;
+  font-weight: 600;
+  transition: 0.3s ease;
+  padding: 14px 15px;
+  border: 1px solid #69275c;
+
+}
+.contact-form {
+  margin-top: 100px; /* Sesuaikan sesuai kebutuhan */
+}
